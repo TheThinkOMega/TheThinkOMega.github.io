@@ -212,7 +212,6 @@ header .navbar-toggler {
 .image img {
   max-width: 100%;
   height: auto;
-  z-index: -1;
 }
 
 @media (max-width: 768px) {

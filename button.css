@@ -32,7 +32,6 @@
     background-size: 200%;
     animation: animate 2s infinite linear;
     width: max-content;
-    z-index: 6;
 }
 
 .button::before {
@@ -42,7 +41,7 @@
     width: 60%;
     position: absolute;
     bottom: -20%;
-    z-index: 5;
+    z-index: -5;
     background-size: 200%;
     animation: animate 2s infinite linear;
     filter: blur(calc(0.8 * var(--m)));
@@ -66,5 +65,9 @@
 @media screen and (max-width: 1000px) {
     :root {
         --m: 1rem;
+    }
+    .button
+    {
+        margin-bottom: 5vh;
     }
 }
