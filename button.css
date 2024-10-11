@@ -25,7 +25,6 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    top: 0;
     background: linear-gradient(#FF5055, #FF5055),
         linear-gradient(#FF5055 50%, rgba(255, 80, 85, 0.6) 80%, rgba(255, 80, 85, 0)), linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
     background-origin: border-box;
@@ -33,6 +32,7 @@
     background-size: 200%;
     animation: animate 2s infinite linear;
     width: max-content;
+    margin-bottom: 1vh;
 }
 
 .button::before {
