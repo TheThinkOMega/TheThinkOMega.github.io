@@ -32,7 +32,7 @@
     background-size: 200%;
     animation: animate 2s infinite linear;
     width: max-content;
-    margin-bottom: 1vh;
+    z-index: 6;
 }
 
 .button::before {
@@ -42,7 +42,7 @@
     width: 60%;
     position: absolute;
     bottom: -20%;
-    z-index: -5;
+    z-index: 5;
     background-size: 200%;
     animation: animate 2s infinite linear;
     filter: blur(calc(0.8 * var(--m)));
