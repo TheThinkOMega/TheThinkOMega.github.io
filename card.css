@@ -56,9 +56,9 @@ body {
   overflow: hidden;
 }
 .card {
-  position: absolute;
+  position: relative;
   z-index: 10;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
