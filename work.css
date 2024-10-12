@@ -7,6 +7,7 @@
   --font-family: 'JetBrains Mono', monospace;
 }
 
+
 /* Global Styles */
 * {
   box-sizing: border-box;
@@ -45,9 +46,11 @@ header .navbar-nav .nav-link {
   transition: color 0.3s;
   margin-right: 1vw;
 }
+
 header .active {
   font-weight: bolder;
 }
+
 header .navbar-nav .nav-link:hover {
   color: var(--primary-color);
 }
@@ -71,7 +74,7 @@ header .navbar-toggler {
 
 /* Landing Page Styles */
 .landing-page {
-  padding-top: 100px; /* To prevent content hiding behind fixed header */
+  padding-top: 100px; /* Prevent content hiding behind fixed header */
 }
 
 .content {
@@ -89,17 +92,38 @@ header .navbar-toggler {
   font-size: 1.125rem;
 }
 
-/* .btn-custom {
-  background-color: var(--primary-color);
-  color: #fff;
-  border-radius: 20px;
-  padding: 12px 30px;
-  transition: background-color 0.3s;
+.c-section__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-.btn-custom:hover {
-  background-color: var(--hover-color);
-} */
+.c-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.c-services__item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 0 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+
+.c-services__item h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.c-services__item p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
 /* Responsive Font Sizes */
 @media (min-width: 1200px) {
@@ -121,6 +145,11 @@ header .navbar-toggler {
 
   header .navbar-brand .logotext h1 {
     font-size: 1.5rem;
+  }
+
+  .c-services__item {
+    flex: 0 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
   }
 }
 
@@ -144,6 +173,11 @@ header .navbar-toggler {
   header .navbar-brand .logotext h1 {
     font-size: 1.3rem;
   }
+
+  .c-services__item {
+    flex: 0 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
 }
 
 @media (max-width: 992px) {
@@ -161,6 +195,11 @@ header .navbar-toggler {
 
   header .navbar-brand .logotext h1 {
     font-size: 1.2rem;
+  }
+
+  .c-services__item {
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
 }
 
@@ -184,6 +223,11 @@ header .navbar-toggler {
   header .navbar-brand .logotext h1 {
     font-size: 1rem;
   }
+
+  .c-services__item {
+    flex: 0 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
 }
 
 @media (max-width: 576px) {
@@ -202,7 +246,8 @@ header .navbar-toggler {
   header .navbar-brand .logotext h1 {
     font-size: 0.9rem;
   }
-  .content .info{
+
+  .content .info {
     margin-bottom: 5vh;
   }
 }
