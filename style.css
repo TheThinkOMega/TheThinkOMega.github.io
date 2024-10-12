@@ -196,11 +196,14 @@ header .navbar-toggler {
   }
 
   header .navbar-nav .nav-link {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   header .navbar-brand .logotext h1 {
     font-size: 0.9rem;
+  }
+  .content .info{
+    margin-bottom: 5vh;
   }
 }
 
