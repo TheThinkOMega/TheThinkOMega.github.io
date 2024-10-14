@@ -380,7 +380,8 @@ ul li:before {
 .c-services__item p {
   margin-top: var(--s-1);
   font-weight: 400;
-  color: #706d7e;
+  /* color: #706d7e; */
+  color: #000;
 }
 
 .c-services__item:hover {
