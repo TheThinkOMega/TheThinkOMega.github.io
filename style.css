@@ -12,12 +12,17 @@
 * {
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   font-family: var(--font-family);
   line-height: 1.6;
   background-color: var(--background-color);
   color: var(--secondary-color);
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -76,7 +81,8 @@ header .navbar-toggler {
 }
 
 .content {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
+  height: 80vh;
 }
 
 .content .info h1 {
