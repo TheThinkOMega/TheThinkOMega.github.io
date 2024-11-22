@@ -12,6 +12,7 @@
 * {
   box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -51,9 +52,11 @@ header .navbar-nav .nav-link {
   transition: color 0.3s;
   margin-right: 1vw;
 }
+
 header .active {
   font-weight: bolder;
 }
+
 header .navbar-nav .nav-link:hover {
   color: var(--primary-color);
 }
@@ -77,7 +80,13 @@ header .navbar-toggler {
 
 /* Landing Page Styles */
 .landing-page {
-  padding-top: 100px; /* To prevent content hiding behind fixed header */
+  padding-top: 100px;
+  /* To prevent content hiding behind fixed header */
+}
+
+.landing-page h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bold;
 }
 
 .content {
@@ -209,7 +218,8 @@ header .navbar-toggler {
   header .navbar-brand .logotext h1 {
     font-size: 0.9rem;
   }
-  .content .info{
+
+  .content .info {
     margin-bottom: 5vh;
   }
 }
