@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ThinkOMega</title>
+    <title>ThinkOMega - Board of Advisors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Normalize CSS -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
@@ -13,10 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <!-- Communal CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Advisors CSS -->
-    <link rel="stylesheet" href="advisors.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        span {
+            color: #ff5055;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,9 +33,7 @@
                         <img src="images/LOGO.png" alt="ThinkOMega Logo" width="50" height="50"
                             class="d-inline-block align-text-top">
                         <div class="logotext ms-2">
-                            <h1 class="mb-0" style="font-size:1.5rem;">
-                                Think<b>OMega</b>
-                            </h1>
+                            <h1 class="mb-0" style="font-size:1.5rem;">Think<b>OMega</b></h1>
                         </div>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,17 +42,14 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav links">
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="work.html">Work</a>
+                                <a class="nav-link" href="work.html">Our Work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="advisors.html">Advisors</a>
+                                <a class="nav-link active" href="advisors.html">Advisors</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link btn-get-started" href="#">Contact Us</a>
@@ -64,48 +62,67 @@
         <!-- End Header -->
 
         <!-- Board of Advisors Section -->
-        <div class="board-of-advisors">
-            <!-- Advisor 1 -->
-            <div class="advisor">
-                <div class="advisor-image">
-                    <img src="images/hari.jpg" alt="Advisor 1">
+        <div class="board-of-advisors py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Board of Advisors</h2>
+                    <p class="lead">Meet the experts guiding us toward innovation and excellence.</p>
                 </div>
-                <div class="advisor-content">
-                    <h3>Venkat <span>Panjani</span></h3>
-                    <p>Venkat is a seasoned <span>technology expert</span> with extensive experience in <span>cloud
-                            computing</span>, <span>disaster recovery (DR)</span>, and <span>cyber recovery
-                            solutions</span>. With a strong background in <span>Amazon Web Services (AWS)</span> and
-                        <span>Application Delivery Controller (ADC)</span> technologies, he has spearheaded initiatives
-                        in <span>system verification</span>, <span>design validation</span>, and <span>quality
-                            assurance</span> across multiple platforms. His expertise includes advanced <span>storage
-                            replication technologies</span> such as <span>EMC SRDF</span>, <span>Hitachi TC/UR</span>,
-                        and native <span>database replication</span> for <span>Oracle</span> and <span>MSSQL</span>. As
-                        the <span>Associate Director of Solutions Design Architecture</span>, his focus on <span>cloud
-                            solutions</span>, <span>DRaaS</span>, and <span>business continuity</span> makes him an
-                        invaluable advisor to our company, guiding us in delivering cutting-edge solutions.</p>
 
+                <!-- Advisor 1 -->
+                <div class="advisor row align-items-center mb-5">
+                    <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
+                        <div class="advisor-image text-center">
+                            <img src="images/hari.jpg" alt="Venkat Panjani" class="img-fluid rounded-circle"
+                                style="width: 250px; height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="advisor-content">
+                            <h3>Venkat <span>Panjani</span></h3>
+                            <p>Venkat Panjani is an accomplished <span>technology expert</span> specializing in
+                                <span>cloud computing</span>, <span>disaster recovery</span>, and <span>cyber recovery
+                                    solutions</span>. He has extensive experience in <span>Amazon Web Services
+                                    (AWS)</span> and <span>Application Delivery Controller (ADC)</span> technologies,
+                                leading initiatives in <span>system verification</span>, <span>design validation</span>,
+                                and <span>quality assurance</span>. Venkat's expertise in <span>storage replication
+                                    technologies</span> such as <span>EMC SRDF</span> and <span>Hitachi TC/UR</span>, as
+                                well as native <span>database replication</span> for <span>Oracle</span> and
+                                <span>MSSQL</span>, has made him a leader in his field. As the <span>Associate Director
+                                    of Solutions Design Architecture</span>, he is passionate about leveraging
+                                <span>cloud solutions</span> to enhance business continuity, ensuring ThinkOMega stays
+                                at the forefront of technology.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Advisor 2 -->
-            <div class="advisor reverse">
-                <div class="advisor-image">
-                    <img src="images/venu.jpeg" alt="Advisor 2">
-                </div>
-                <div class="advisor-content">
-                    <h3>Venu <span>Chitvel</span></h3>
-                    <p>Venu Chitvel is an accomplished <span>database architect</span> with extensive experience across
-                        diverse industries, including <span>EMI, Ask.com, the Chicago Tribune, 1-800-Flowers, and
-                            BPS</span>. He has played a critical role in <span>federal projects</span>, as well as with
-                        <span>Match Group</span> and <span>Experian Health</span>. Holding an <span>MS in IT and
-                            Cybersecurity</span> from the <span>University of Dallas</span>, he brings a robust
-                        technical background and expertise in <span>database solutions</span>, ensuring security and
-                        scalability in high-demand environments.
-                    </p>
-
+                <!-- Advisor 2 -->
+                <div class="advisor row align-items-center mb-5 reverse">
+                    <div class="col-lg-4 col-md-5 mb-4 mb-md-0 order-md-2">
+                        <div class="advisor-image text-center">
+                            <img src="images/venu.jpeg" alt="Venu Chitvel" class="img-fluid rounded-circle"
+                                style="width: 250px; height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 order-md-1">
+                        <div class="advisor-content">
+                            <h3>Venu <span>Chitvel</span></h3>
+                            <p>Venu Chitvel is an experienced <span>database architect</span> with a diverse career
+                                spanning <span>EMI, Ask.com, the Chicago Tribune, 1-800-Flowers, and BPS</span>. He has
+                                made significant contributions to <span>federal projects</span>, as well as with
+                                <span>Match Group</span> and <span>Experian Health</span>. With an <span>MS in IT and
+                                    Cybersecurity</span> from the <span>University of Dallas</span>, Venu is dedicated
+                                to designing secure, scalable <span>database solutions</span> for high-demand
+                                environments. His expertise is instrumental in ensuring the integrity and scalability of
+                                ThinkOMega's projects.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <!-- Bootstrap JS (with Popper) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
